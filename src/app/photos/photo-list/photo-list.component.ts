@@ -18,6 +18,6 @@ export class PhotoListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.photos = this.activatedRoute.snapshot.data['photos'];
+    this.photos = this.activatedRoute.snapshot.data.photos;
   }
 }
