@@ -5,7 +5,7 @@
       class="rounded"
       placeholder="Procurar..."
       autofocus
-      (keyup)="filter = $event.target.value"
+      (keyup)="debounce.next(filter = $event.target.value)"
     />
   </form>
 </div>
